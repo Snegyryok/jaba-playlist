@@ -77,6 +77,7 @@ class Player():
                                     # если трек закончился или произошла ошибка
                                     if state in [vlc.State.Ended, vlc.State.Error]:
                                         break
+
                             except KeyboardInterrupt:
                                 print("\n⏹ Остановка")
                                 player.stop()
